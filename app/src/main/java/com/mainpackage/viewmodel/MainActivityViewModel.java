@@ -7,13 +7,13 @@ public class MainActivityViewModel extends ViewModel {
 
 
     // When the app first launched
-    public int getInitialCounter(){
+    public int getInitialCounter() {
         return counter;
     }
 
 
     // When user clicks the button
-    public int getCounter(){
+    public int getCounter() {
         counter++;
         return counter;
 

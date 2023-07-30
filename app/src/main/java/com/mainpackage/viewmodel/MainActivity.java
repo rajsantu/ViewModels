@@ -1,13 +1,11 @@
 package com.mainpackage.viewmodel;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.ViewModelProvider;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.ViewModelProvider;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -27,18 +25,14 @@ public class MainActivity extends AppCompatActivity {
 
 
         // Getting the initial Count
-        textView.setText("You Clicked Me: "+mainActivityViewModel.getInitialCounter()+ " times");
+        textView.setText(String.format(getString(R.string.you_clicked_me_d_times), mainActivityViewModel.getInitialCounter()));
 
 
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        btn.setOnClickListener(v -> {
 
-                // Getting the Current Count
-                textView.setText("You Clicked Me: "+mainActivityViewModel.getCounter() +" times");
-            }
+            // Getting the Current Count
+            textView.setText(String.format(getString(R.string.you_clicked_me_d_times), mainActivityViewModel.getCounter()));
         });
-
 
 
     }

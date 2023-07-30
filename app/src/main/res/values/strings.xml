@@ -2,4 +2,5 @@
     <string name="app_name">ViewModel</string>
     <string name="you_clicked_me_0_times">You Clicked Me: 0 Times</string>
     <string name="click_me">Click Me!</string>
+    <string name="you_clicked_me_d_times">You Clicked Me: %d times</string>
 </resources>
